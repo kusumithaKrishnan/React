@@ -10,7 +10,6 @@ class Header extends Component {
 
     render() {
         return (
-
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">
                     <img
@@ -21,9 +20,8 @@ class Header extends Component {
                         className="d-inline-block align-top"
                     />{' '}
                     React and Redux 
-    </Navbar.Brand>
+                </Navbar.Brand>
             </Navbar>
-
         )
     }
 }
