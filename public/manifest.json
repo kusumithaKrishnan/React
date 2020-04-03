@@ -1,6 +1,13 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "homepage": "https://kusumithaKrishnan.github.io/React",
+  "dependencies": {
+		"gh-pages": "^2.0.1",
+		"react": "^16.8.3",
+		"react-dom": "^16.8.3",
+		"react-scripts": "2.1.5",
+		"yarn": "^1.13.0"},
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,5 +18,12 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"}
 }

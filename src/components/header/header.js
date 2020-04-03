@@ -1,24 +1,29 @@
-import React, {Component} from 'react';
-import logo from '../../images/logo.png'
+import React, { Component } from 'react';
+import logo from '../../images/logo.png';
+import Navbar from 'react-bootstrap/Navbar'
 class Header extends Component {
 
-    componentDidMount(){
+    componentDidMount() {
         const { getNames } = this.props;
         getNames();
     }
 
     render() {
-        return(
-            <header>
-                <nav className="navbar navbar-expand-sm">
-                    <a className="navbar-brand">
-                        <img src={logo} alt="logo" className="app-logo" />
-                    </a>
-                    <div className="app-title">
-                        Rapid Quote Order Management
-            </div>
-                </nav>
-            </header>
+        return (
+
+            <Navbar bg="dark" variant="dark">
+                <Navbar.Brand href="#home">
+                    <img
+                        alt=""
+                        src={logo}
+                        width="84"
+                        height="60"
+                        className="d-inline-block align-top"
+                    />{' '}
+                    React and Redux 
+    </Navbar.Brand>
+            </Navbar>
+
         )
     }
 }
