@@ -12,14 +12,8 @@ class Header extends Component {
         return (
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">
-                    <img
-                        alt=""
-                        src={logo}
-                        width="84"
-                        height="60"
-                        className="d-inline-block align-top"
-                    />{' '}
-                    React and Redux 
+                    <img alt=""  src={logo} width="84" height="60" className="d-inline-block align-top" />{' '}
+                    React and Redux -- The Burger Buider
                 </Navbar.Brand>
             </Navbar>
         )
